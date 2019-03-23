@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Myers' Residence Virtual Tour</title>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Myers Residence Virtual Tour</h1>
+            <nav>
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "video.html">Video Demo</a></li>
+                    <li><a href = "downloads.html">Download List</a></li>
+                    <li><a href = "sidebyside.html">Photos</a></li>
+                    <li><a href = "form.html" class = current>Feedback Form</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <main>
+            <h2>Feedback Form</h2>
+            <p>Please provide any feedback you may have regarding this project. Please include your name in the name field and use the message field to type comments, questions, or ideas for future expansion with the project. Thanks!</p>
+            
+            <form onSubmit = "return writeToFile()" style="padding: 20px">
+                <label>Name (first and last):</label>
+                <input type = "text" name = "name" id = "name" placeholder = "Name" required>
+                <br>
+                <br>
+                <label>Feedback:</label>
+                <input type = "text" name = "feedback" id = "feedback" placeholder="Feedback" required>
+                <br>
+                <input type="submit" value="Submit" id = button>
+            </form>
+            <script>
+                function writeToFile(){
+                    let name = document.getElementById('name');
+                    let feedback = document.getElementById('feedback');
+                    
+                    console.log(name.value);
+                    console.log(feedback.value);
+                    //this data could then be posted to a database if one was available
+                    //one possibility would be to post to a lambda function to be stored
+                    //in a dynamodb database
+                }
+            </script>
+        </main>
+            
+        <footer>
+            <p>&copy; Chris Fall 2019</p>
+        </footer>
+    </body>
+        
+</html>

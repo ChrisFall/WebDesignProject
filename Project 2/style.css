@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid gray;
+}
+ol ul a{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 10px;
+    color: yellow;
+    background-color: cornflowerblue;
+    margin: auto;
+}
+ol{
+    font-style: oblique;
+    color: blue;
+}
+main{
+    background: linear-gradient(to top, gray, white);
+}
+p{
+    color:blue;
+}
+h2{
+    background: linear-gradient(to left, red, white);
+    padding: 20px;
+    text-indent: 10px;
+}
+h3{
+    background: linear-gradient(to left, blue, white);
+    text-indent: 10px;
+}
+

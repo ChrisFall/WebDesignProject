@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Myers' Residence Virtual Tour</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Myers Residence Virtual Tour</h1>
+            <nav>
+                <ul>
+                    <li><a href = "home.html" class = current>Home</a></li>
+                    <li><a href = "video.html">Video Demo</a></li>
+                    <li><a href = "downloads.html">Download List</a></li>
+                    <li><a href = "sidebyside.html">Photos</a></li>
+                    <li><a href = "form.html">Feedback Form</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <main>
+            <h2>Home Page</h2>
+            
+            <br>
+            
+            <div id = 'devs'>
+                
+                <h3>Project Contributors</h3>
+                <br>
+                <h4>Main Developers</h4>
+                <ul>
+                    <li>Chris Fall</li>
+                    <li>Matt Pigliavento</li>
+                </ul>
+                <h4>Other Developers</h4>
+                <ul>
+                    <li>Mike Hamilton</li>
+                    <li>Derek McPhail</li>
+                </ul>
+                <h4>Faculty Advisor</h4>
+                <ul>
+                    <li>Dr. Robin Flatland</li>
+                </ul>
+                
+            </div>
+            
+            <div id = 'description'>
+                <h3>Project Discription</h3>
+                <br>
+                <h4>Introduction</h4>
+                <p>In this project, we created software that allows a user to take a historically accurate virtual tour of the Stephen and Harriet Myers’ Residence, a house that was a headquarters for Underground Railroad activity in Albany, NY in the 1850s.  To accomplish this, we collaborated with Siena history and creative arts students and learned to use 3D modeling and game development tools.</p>
+                
+                <h4>Methodology</h4>
+                <p>Our workflow involved three stages. First, we coordinated with history students, who provided us with background information and reference photos of period appropriate furniture. We modeled the suggested furniture using Blender, imported our models into Unreal Engine 4.1, and programmed it to allow user interaction.</p>
+                
+                <h4>Modeling</h4>
+                <p>Blender is open source 3D modeling software. We used it to sculpt models (polygonal meshes) of furniture and other items to populate the scene</p>
+                
+                <h4>Creating 3D World</h4>
+                <p>Unreal Engine 4 (UE4) is a game engine used widely throughout the gaming industry. We constructed a centimeter accutate recreation of the Myers' Residence using UE4 geometry, then imported our Blender models and positioned them according to the recommendations from our history department collaborators.</p>
+                
+                <h4>Applying Materials</h4>
+                <p>In  UE4,  materials  are applied  to  meshes to give them lifelike detailincluding color, specular reflections, and opacity.  It  may  include  texture mapping which “paints” an   image   onto   the mesh, and bump  mapping which simulates bumps and wrinkles on the surface.</p>
+                
+                <h4>Blueprints</h4>
+                <p>The Blueprint system in UE4 is  a  visual  representation  of  the  C++ programming language that uses nodes instead of written code.  These are  used to implement interactive  elements such as movement, user interfaces, and physics objects</p>
+                
+                <h4>Virtual Reality</h4>
+                <p>We worked with the Oculus Rift VR system.This includes a headset, two sensors, and two motion controllers, which could be used to pick up objects in the scene, which was enabled by UE4 Blueprints.</p>
+                
+                <h4>Future Work</h4>
+                <p>This project may be expanded upon in the future by modeling additional floors, adding sound, improving the user interface, adding an outside view, acquiring/creating more textures/ materials, and adding animations to doors, drawers, etc…</p>
+                
+                <h4>Acknowldgements</h4>
+                <p>Funding for this project was provided by Siena College’s Center for Undergraduate Research and Creative Activities (CURCA). Special thanks to Taylor Flach, Shelby Crespino, and Rae Nooney for providing reference images and historical context. Also thanks to Mary Liz and Paul Stewart from the Underground Railroad History Project for providing access to the Myers’ Residence as well as historical information. Finally, thanks to our faculty advisors: Dr. Jennifer Dorsey (History), and Dr. Ruth Kassel (ACE).</p>
+            </div>
+        </main>
+            
+        <footer>
+            <p>&copy; Chris Fall 2019</p>
+        </footer>
+    </body>
+        
+</html>

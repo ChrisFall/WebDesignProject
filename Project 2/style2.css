@@ -1,0 +1,176 @@
+header
+{
+    overflow: auto;
+    box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+	background-color: darkblue;
+	color: ghostwhite;
+    top:0px;
+    
+}
+header h1
+{
+    float: left;
+    margin-left: 20px;
+    padding: 10px;
+}
+header nav
+{
+    float: right;
+    margin-right: 20px;
+}
+header img 
+{
+    display:block;
+    margin: auto;
+}
+body
+{
+    background: linear-gradient(to top, gray, white);
+	margin: 0px;
+	padding: 0px;
+}
+nav ul
+{
+    padding: 0;
+    list-style: none;
+}
+nav li
+{
+    float: left;
+    padding: 0;
+}
+nav li a
+{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 10px;
+    color: yellow;
+    background-color: cornflowerblue;
+    margin: auto;
+}
+main
+{
+    overflow: auto;
+    box-sizing: border-box;
+    box-shadow: 5px 5px darkblue;
+    margin: 150px auto 0px;
+    width: 100%;
+}
+main h2
+{
+    background: linear-gradient(to left, red, white);
+    padding: 20px;
+    text-indent: 10px;
+}
+main h3
+{
+    background: linear-gradient(to left, blue, white);
+    text-indent: 10px;
+}
+main table 
+{
+	border-collapse: collapse;
+    margin:auto;
+}
+
+main td, main th
+{
+	border: 1px solid black;
+	padding: 5px 10px
+}
+
+main th 
+{
+	background-color: #ff4422;
+	color: white;
+}
+
+main tr:nth-child(even) 
+{
+	background-color: lightskyblue;
+}
+main tr:nth-child(odd) 
+{
+	background-color: deepskyblue;
+}
+main ul 
+{
+	list-style: square;
+    font-size: larger;
+    margin: auto;
+}
+
+main ol 
+{
+	list-style: lower-roman;
+}
+main li
+{
+    color: firebrick;
+}
+main p 
+{
+	text-indent: 20px;
+	text-align: justify;
+}
+
+main aside
+{
+    border: 2px solid red;
+    font-size: smaller;
+    padding: 10px;
+    background-color: papayawhip;
+}
+main img
+{
+    margin-left: 20px;
+}
+footer
+{
+    text-align: center;
+}
+
+@media(min-width: 700px)
+{
+    main
+    {
+        width: 650px;
+        margin: auto;
+    }
+    header
+    {
+        position: fixed;
+    }
+    aside
+    {
+        width: 200px;
+        float: right;
+    }
+}
+@media(min-width: 1000px)
+{
+    div
+    {
+        width: 950px;
+        margin: auto;
+    }
+    header
+    {
+        width: 300px;
+        float: left;
+    }
+    footer
+    {
+        width: 300px;
+        float: left;
+        position: fixed;
+        bottom: 0;
+        
+    }
+    main
+    {
+        float: right;
+    }
+}

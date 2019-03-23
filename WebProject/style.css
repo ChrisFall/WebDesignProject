@@ -1,0 +1,182 @@
+/* the styles for the elements */
+* {
+	margin: 0px;
+	padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: auto;
+    margin: auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+nav{
+    position: relative;
+}
+nav ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+nav > ul > li{
+    float: left;
+    width: 20%;
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 1em 0em;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li ul{
+    display: none;
+}
+nav ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+
+
+.current{
+    color: yellow;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+/* the styles for the main content */
+h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+main {
+	padding: 50px;
+    margin: auto;
+}
+main h2{
+    text-align: center;
+    padding 10px 0px;
+}
+main p{
+    padding: 5px 0px;
+}
+main ul{
+    padding: 1em 2em;
+}
+main ol{
+    padding: 1em 2em;
+}
+main > #virtual >img{
+    padding: 20px;
+}
+main > #real >img{
+    padding: 20px;
+}
+form{
+    text-align: center;
+}
+#name{
+    width: 310px;
+    border:1px solid black;
+    padding: 5px;
+}
+#feedback{
+    width:390px;
+    border:1px solid black;
+    padding: 5px;
+    overflow:visible;
+}
+#button{ 
+    background-color: maroon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+#km{
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+#vr{
+    width:50%;
+    float: left;
+    padding: 10px;
+    border-left: 2px solid black;
+}
+#devs{
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+#description{
+    width:50%;
+    float: left;
+    padding: 10px;
+}
+#video{
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+#virtual{
+    width: 50%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+#real{
+    width:50%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+.image{
+    text-align: center;
+    margin: 30px;
+}
+
+
+
+/* the styles for the footer */
+footer {
+	background-color: #931420;
+    clear: both;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
